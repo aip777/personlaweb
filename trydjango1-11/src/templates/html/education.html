@@ -1,0 +1,147 @@
+{% load static from staticfiles %}
+<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<h2 class="colorlib-heading animate-box">Education</h2>
+					{% for obj in education %}
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+									<div class="panel panel-default">
+
+									    <div class="panel-heading" role="tab" id="headingOne">
+									        <h4 class="panel-title">
+									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+													{{ obj.education_masters }}
+
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+									         <div class="panel-body">
+									            <div class="row">
+										      		<div class="col-md-6">
+										      			<p>
+
+													{{ obj.education_masters_details }}
+
+														</p>
+										      		</div>
+										      		<div class="col-md-6">
+										      			<p>
+
+													{{ obj.education_masters_details_two }}
+
+
+														</p>
+										      		</div>
+										      	</div>
+									         </div>
+									    </div>
+
+									</div>
+
+<!--									<div class="panel panel-default">-->
+<!--									    <div class="panel-heading" role="tab" id="headingTwo">-->
+<!--									        <h4 class="panel-title">-->
+<!--									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+<!--													{% for obj in object_list %}-->
+<!--													{{ obj.education_bachelor }}-->
+<!--													{% endfor %}-->
+
+<!--									            </a>-->
+<!--									        </h4>-->
+<!--									    </div>-->
+<!--									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">-->
+<!--									        <div class="panel-body">-->
+<!--									            <p>-->
+<!--													{% for obj in object_list %}-->
+<!--													{{ obj.education_bachelor_details }}-->
+<!--													{% endfor %}-->
+<!--												</p>-->
+
+<!--									        </div>-->
+<!--									    </div>-->
+<!--									</div>-->
+<!--									<div class="panel panel-default">-->
+<!--									    <div class="panel-heading" role="tab" id="headingThree">-->
+<!--									        <h4 class="panel-title">-->
+<!--									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">-->
+<!--													{% for obj in object_list %}-->
+<!--													{{ obj.education_college }}-->
+<!--													{% endfor %}-->
+<!--									            </a>-->
+<!--									        </h4>-->
+<!--									    </div>-->
+<!--									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">-->
+<!--									        <div class="panel-body">-->
+<!--									            <p>-->
+<!--													{% for obj in object_list %}-->
+<!--													{{ obj.education_college_details }}-->
+<!--													{% endfor %}-->
+
+<!--												</p>-->
+<!--									        </div>-->
+<!--									    </div>-->
+<!--									</div>-->
+
+<!--									<div class="panel panel-default">-->
+<!--									    <div class="panel-heading" role="tab" id="headingFour">-->
+<!--									        <h4 class="panel-title">-->
+<!--									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">-->
+<!--													{% for obj in object_list %}-->
+<!--													{{ obj.education_school }}-->
+<!--													{% endfor %}-->
+<!--									            </a>-->
+<!--									        </h4>-->
+<!--									    </div>-->
+<!--									    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">-->
+<!--									        <div class="panel-body">-->
+<!--									            <p>-->
+<!--													{% for obj in object_list %}-->
+<!--													{{ obj.education_school_details }}-->
+<!--													{% endfor %}-->
+
+<!--												</p>-->
+<!--									        </div>-->
+<!--									    </div>-->
+<!--									</div>-->
+
+<!--									<div class="panel panel-default">-->
+<!--									    <div class="panel-heading" role="tab" id="headingFive">-->
+<!--									        <h4 class="panel-title">-->
+<!--									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">-->
+
+<!--													{% for obj in object_list %}-->
+<!--													{{ obj.education_other }}-->
+<!--													{% endfor %}-->
+<!--									            </a>-->
+<!--									        </h4>-->
+<!--									    </div>-->
+<!--									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">-->
+<!--									        <div class="panel-body">-->
+<!--									            <p>-->
+<!--													{% for obj in object_list %}-->
+<!--													{{ obj.education_other_details }}-->
+<!--													{% endfor %}-->
+<!--												</p>-->
+<!--									        </div>-->
+<!--									    </div>-->
+<!--									</div>-->
+								</div>
+							</div>
+						</div>
+
+					</div>
+{% endfor %}
+				</div>
+			</section>

@@ -1,0 +1,154 @@
+<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a>
+
+										  {% for obj in experience_post %}
+										   <div class="timeline-icon color-2">
+					                  			<i class="icon-pen2"></i>
+					               			</div>
+
+										  <h2>{{ obj.experience_title_one }} {{ obj.experience_years_one }}</h2>
+
+									  </a></h2>
+					                  <p>{{obj.experience_details_one}}</p>
+
+									   {% endfor %}
+								   </div>
+					            </div>
+					         </article>
+
+
+<!--					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">-->
+<!--					            <div class="timeline-entry-inner">-->
+<!--					               <div class="timeline-icon color-2">-->
+<!--					                  <i class="icon-pen2"></i>-->
+<!--					               </div>-->
+
+<!--									 <div class="timeline-label">-->
+<!--					                  <h2><a href="#">-->
+<!--										  {% for obj in object_list %}-->
+<!--										  {{ obj.experience_title_two }}-->
+
+<!--									  </a> <span>{{ obj.experience_years_two }}</span></h2>-->
+<!--					                  <p>{{obj.experience_details_two}}</p>-->
+
+<!--									   {% endfor %}-->
+<!--								   </div>-->
+
+<!--					            </div>-->
+<!--					         </article>-->
+
+<!--					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">-->
+<!--					            <div class="timeline-entry-inner">-->
+<!--					               <div class="timeline-icon color-3">-->
+<!--					                  <i class="icon-pen2"></i>-->
+<!--					               </div>-->
+
+<!--									 <div class="timeline-label">-->
+<!--					                  <h2><a href="#">-->
+<!--										  {% for obj in object_list %}-->
+<!--										  {{ obj.experience_title_three }}-->
+
+<!--									  </a> <span>{{ obj.experience_years_three }}</span></h2>-->
+<!--					                  <p>{{obj.experience_details_three }}</p>-->
+
+<!--									   {% endfor %}-->
+<!--								   </div>-->
+
+
+<!--					            </div>-->
+<!--					         </article>-->
+
+<!--					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">-->
+<!--					            <div class="timeline-entry-inner">-->
+<!--					               <div class="timeline-icon color-4">-->
+<!--					                  <i class="icon-pen2"></i>-->
+<!--					               </div>-->
+
+<!--									 <div class="timeline-label">-->
+<!--					                  <h2><a href="#">-->
+<!--										  {% for obj in object_list %}-->
+<!--										  {{ obj.experience_title_four }}-->
+
+<!--									  </a> <span>{{ obj.experience_years_four }}</span></h2>-->
+<!--					                  <p>{{obj.experience_details_four }}</p>-->
+
+<!--									   {% endfor %}-->
+<!--								   </div>-->
+
+
+<!--					            </div>-->
+<!--					         </article>-->
+
+<!--					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">-->
+<!--					            <div class="timeline-entry-inner">-->
+<!--					               <div class="timeline-icon color-5">-->
+<!--					                  <i class="icon-pen2"></i>-->
+<!--					               </div>-->
+
+<!--									 <div class="timeline-label">-->
+<!--					                  <h2><a href="#">-->
+<!--										  {% for obj in object_list %}-->
+<!--										  {{ obj.experience_title_five }}-->
+
+<!--									  </a> <span>{{ obj.experience_years_five }}</span></h2>-->
+<!--					                  <p>{{obj.experience_details_five }}</p>-->
+
+<!--									   {% endfor %}-->
+<!--								   </div>-->
+
+
+<!--					            </div>-->
+<!--					         </article>-->
+
+
+<!--							 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">-->
+<!--					            <div class="timeline-entry-inner">-->
+<!--					               <div class="timeline-icon color-6">-->
+<!--					                  <i class="icon-pen2"></i>-->
+<!--					               </div>-->
+
+<!--									 <div class="timeline-label">-->
+<!--					                  <h2><a href="#">-->
+<!--										  {% for obj in object_list %}-->
+<!--										  {{ obj.experience_title_six }}-->
+
+<!--									  </a> <span>{{ obj.experience_years_six }}</span></h2>-->
+<!--					                  <p>{{obj.experience_details_six }}</p>-->
+
+<!--									   {% endfor %}-->
+<!--								   </div>-->
+
+
+<!--					            </div>-->
+<!--					         </article>-->
+
+
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>

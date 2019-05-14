@@ -1,0 +1,89 @@
+
+{% block context %}
+{% load static from staticfiles %}
+
+<section class="colorlib-blog" data-section="blog">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Read</span>
+							<h2 class="colorlib-heading">Recent Blog</h2>
+						</div>
+					</div>
+					{% for obj in post_queryset_new %}
+					<div class="row">
+
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+
+
+								<div class="desc">
+									<span><small>{{ obj.created_date }}</small> | <small> {{ obj.blog_small_title }}   <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="http://zendanwar.com" target="_blank">{{ obj.blog_title }}</a></h3>
+									<p>{{ obj.blog_text }}</p>
+								</div>
+								<a href="http://zendanwar.com" target="_blank" class="blog-img"><img src="/media/{{ obj.blog_images }}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+
+							</div>
+						</div>
+						{% endfor %}
+<!--						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">-->
+<!--							<div class="blog-entry">-->
+<!--								{% for obj in object_list_post_two %}-->
+
+<!--								<div class="desc">-->
+<!--									<span><small>{{ obj.created_date_two }}</small> | <small> {{ obj.blog_small_title_two }}  <i class="icon-bubble3"></i> 4</small></span>-->
+<!--									<h3><a href="http://zendanwar.com" target="_blank" >{{ obj.blog_title_two }}</a></h3>-->
+<!--									<p>{{ obj.blog_text_two }}</p>-->
+<!--								</div>-->
+<!--								<a href="http://zendanwar.com" target="_blank" class="blog-img"><img src="/media/{{ obj.blog_images_two }}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>-->
+<!--								{% endfor %}-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">-->
+<!--							<div class="blog-entry">-->
+<!--								{% for obj in object_list_post_three %}-->
+
+<!--								<div class="desc">-->
+<!--									<span><small>{{ obj.created_date_three }} </small> | <small> {{ obj.blog_small_title_three }}   <i class="icon-bubble3"></i> 4</small></span>-->
+<!--									<h3><a href="http://zendanwar.com" target="_blank" >{{ obj.blog_title_three }}</a></h3>-->
+<!--									<p>{{ obj.blog_text_three }}</p>-->
+<!--								</div>-->
+<!--								<a href="http://zendanwar.com" target="_blank" class="blog-img"><img src="/media/{{ obj.blog_images_three }}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>-->
+<!--								{% endfor %}-->
+<!--							</div>-->
+<!--						</div>-->
+						</div>
+<!--					<div class="row">-->
+<!--						<div class="col-md-12 animate-box">-->
+<!--							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>-->
+<!--						</div>-->
+<!--					</div>-->
+					</div>
+
+
+
+
+<!--	<div class="pagination" >-->
+<!--    <span class="step-links">-->
+<!--        {% if post_queryset_new.has_previous %}-->
+<!--            <a href="?page=1">&laquo; first</a>-->
+<!--            <a href="?page={{ post_queryset_new.previous_page_number }}">previous</a>-->
+<!--        {% endif %}-->
+
+<!--        <span class="current">-->
+<!--            Page {{ post_queryset_new.number }} of {{ post_queryset_new.paginator_post.num_pages }}.-->
+<!--        </span>-->
+
+<!--        {% if post_queryset_new.has_next %}-->
+<!--            <a href="?page={{ post_queryset_new.next_page_number }}">next</a>-->
+<!--            <a href="?page={{ post_queryset_new.paginator_post.num_pages }}">last &raquo;</a>-->
+<!--        {% endif %}-->
+<!--    </span>-->
+<!--</div>-->
+
+
+
+
+			</section>
+{% endblock context %}
